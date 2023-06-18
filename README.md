@@ -9,4 +9,4 @@ Każda opinia składania się z nazwy twórcy opinii (imię i nazwisko) oraz tre
 `
 
 W związku z tym dodałem imię i nazwisko jako osobne wartości w formularzu.
-Dodaję taki komentarz ponieważ poźniej zauważyłem, że na screenie sa one zapisane jako jedna zmienna, ale mam nadzieję, że to nie problem.
+Dodaję taki komentarz ponieważ później zauważyłem, że na screenie są one zapisane jako jedna zmienna, ale mam nadzieję, że to nie problem.
