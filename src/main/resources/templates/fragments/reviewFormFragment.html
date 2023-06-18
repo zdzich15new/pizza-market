@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<section id="review-form-content">
+    <div class="container">
+
+        <h2>Dodaj nową opinię</h2>
+
+        <form method="post" th:object="${reviewForm}">
+            <div>
+                <input th:field="${reviewForm.firstName}" type="text" placeholder="Imię" class="input">
+            </div>
+            <div>
+                <input th:field="${reviewForm.lastName}" type="text" placeholder="Nazwisko" class="input">
+            </div>
+            <div>
+                <input th:field="${reviewForm.review}" type="text" placeholder="Twoja opinia..." class="input">
+            </div>
+            <div>
+                <button class="btn">Dodaj</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+</html>

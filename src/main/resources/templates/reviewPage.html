@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: template (~{:: #review-content})}">
+
+<section id="review-content">
+    <div class="container">
+        <h1>Opinie</h1>
+        <table style="width: 100%">
+            <tr th:each="review : ${reviewsList}">
+                <td>
+                    <h3 th:text="${review.firstName} + ' ' + ${review.lastName}"></h3>
+                    <p style="font-weight: 200" th:text="${review.review}"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <section th:replace="~{fragments/reviewFormFragment :: section}"></section>
+
+</section>
+
+</html>
